@@ -1,0 +1,22 @@
+'''
+        #Training data 1: Sentiment 140
+        f = open(r'/Users/Happy/Documents/Devika/SVM/SVM/training_test.csv','r', encoding='ISO-8859-1')
+        reader = csv.reader(f)
+
+        for row in reader:
+            X.append(row[5])
+            y.append(1 if (row[0]=='4') else 0)
+''' 
+
+ '''                           
+        #Training data 3: Umich
+
+        f = open(r'/Users/Happy/Documents/Devika/SVM/UMich-Kaggle/training.txt','r', encoding='ISO-8859-1')
+        reader = csv.reader(f)
+
+        for row in reader:
+            line = ' '. join(row)
+            lyst = line.split('\t')
+            X.append(lyst[1])
+            y.append(int(lyst[0]))
+'''
